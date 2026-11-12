@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Copilot V2 Repository</title>
+<meta name="description" content="Files for the Copilot V2 project: sheets, docs, decks, forms, query exports and tools.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Copilot V2 Project · AC Service and Repair | Product Business Team</p>
+      <h1>Repository</h1>
+      <p class="sub">Every file for the Copilot V2 project in one place: data, studies, firmware reviews, SOPs, training and tools.</p>
+    </div>
+  </header>
+
+  <section class="controls" aria-label="Filter and sort">
+    <div class="filter-row">
+      <span class="label">Type</span>
+      <div class="chips" id="chips" role="tablist" aria-label="File type"></div>
+    </div>
+    <div class="sort-row">
+      <span class="label">Sort:</span>
+      <div class="seg" role="group" aria-label="Sort order">
+        <button type="button" data-sort="name" aria-pressed="true">A → Z</button>
+        <button type="button" data-sort="type" aria-pressed="false">Type</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="list-section">
+    <h2 id="list-title">All files</h2>
+    <ul class="files" id="files" aria-live="polite"><li class="state">Loading files…</li></ul>
+  </section>
+
+  <footer>
+    <p><b>Curated list.</b> To add or change a file, send its Google Drive link and a one-line summary to the project owner. Links open only for people with access in Google Drive.</p>
+  </footer>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
